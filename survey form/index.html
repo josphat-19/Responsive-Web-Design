@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html LANG="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Camper Cafe Survey</h1>
+    <p id="description">Thankyou for taking this survey to help us improve our cafe.</p>
+    <form 
+      id="survey-form">
+      <fieldset>
+        <label 
+          id="name-label">Name: 
+          <input id="name" 
+            type="text" 
+            required 
+            placeholder="john doe"
+          />
+        </label>
+        <label 
+          id="email-label">Email: 
+          <input id="email" 
+            type="email" 
+            required
+            placeholder="john@gmail.com"
+          />
+        </label>
+        <label id="number-label">Age:
+          <input id="number" 
+            type="number" 
+            min="14" 
+            max="100" 
+            placeholder="24"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How do you find the service at our cafe? 
+          <select id="dropdown">
+            <option value="">
+              (Select one)</option>
+            <option value="1">
+              very good</option>
+            <option value="2">
+              decent</option>
+              <option value="3">
+              could be better</option>
+        </select>
+</fieldset>       
+<fieldset>
+<legend>How likely would you recommend Camper cafe to a friend? </legend>
+        <label>
+          <input type="radio"
+            name="recommend"
+            value="very-likely"
+            checked
+            class="inline"
+          />Very likely
+        </label>
+        <label>
+          <input type="radio"
+            name="recommend"
+            value="likely"
+            class="inline"
+          />likely
+        </label>
+        <label>
+          <input type="radio"
+            name="recommend"
+            value="not-likely"
+            class="inline"
+          />Not likely
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Which is your favourite coffee</legend>
+        <label
+            ><input
+              name="prefer"
+              value="french-vanilla"
+              type="checkbox"
+              class="input-checkbox"
+            />French Vanilla</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="caramel-macchiato"
+              type="checkbox"
+              class="input-checkbox"
+            />Caramel Macchiato</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="pumpkin-spice"
+              type="checkbox"
+              class="input-checkbox"
+            />Pumpkin Spice</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hazelnut"
+              type="checkbox"
+              class="input-checkbox"
+            />Hazelnut</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mocha"
+              type="checkbox"
+              class="input-checkbox"
+            />Mocha</label
+          >
+          </fieldset>
+          <fieldset>
+          <label for="comment">Any comments or suggestions on how we can improve our service?
+           <textarea 
+              id="comment" 
+              name="comment" 
+              rows="3" 
+              cols="30">
+           </textarea>
+          </label>
+      </fieldset>
+      <input
+        id="submit"
+        type="submit"
+        value="Submit" />
+    </form>
+  </body>
+</html>
